@@ -123,9 +123,41 @@ background-color: #7289da;
 <a>ㅤ</a>
 <a>ㅤ</a>
 <center><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support by donating', '#00aeff', 'R6R0CTXTB');kofiwidget2.draw();</script> </center>
-
+<!-- Adblock -->
 <script async="async" data-cfasync="false" src="//academyblocked.com/6e816930212eb74fc990b49747784ee3/invoke.js"></script>
 <div id="container-6e816930212eb74fc990b49747784ee3"></div>
 <script type='text/javascript' src='//academyblocked.com/af/36/f8/af36f858f4594f43e762c370dcee67ce.js'></script>
+ <div id="detect"></div>
+  <div class="wrapper">
+    <div class="content">
+      <div class="warn-icon">
+        <span class="icon"><i class="fas fa-exclamation"></i></span>
+      </div>
+      <h2>AdBlock Detected!</h2>
+      <p>Our website is made possible by displaying ads to our visitors. Please supporting us by whitelisting our website.</p>
+      <div class="btn">
+        <div class="bg-layer"></div>
+        <button>Okay, I'll Whitelist</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    const detect = document.querySelector("#detect");
+    const wrapper = document.querySelector(".wrapper");
+    const button = wrapper.querySelector("button");
+    let adClasses = ["ad", "ads", "adsbox", "doubleclick", "ad-placement", "ad-placeholder", "adbadge", "BannerAd"];
+    for(let item of adClasses){
+      detect.classList.add(item);
+    }
+    let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
+    if(!wrapper.classList.contains("show")){
+      getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
+    }
+    button.addEventListener("click", ()=>{
+      wrapper.classList.remove("show");
+    });
+  </script>
+<!-- Adblock -->
+
   </body>
 </html>
