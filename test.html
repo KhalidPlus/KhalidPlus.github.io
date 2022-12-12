@@ -4,6 +4,24 @@
   <title>Website For tests/</title>
 </head>
 <body>
-  <h1>Website For tests/h1>
+  <script src="https://example.com/path/to/video.js"></script>
+<script>
+  var player = videojs('my-video');
+
+  // Configurar el reproductor para reproducir anuncios
+  player.ima({
+    id: 'my-video',
+    adTagUrl: 'https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3'
+  });
+
+  // Solicitar anuncios VAST
+  player.ima.requestAds('https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3');
+
+  // Reproducir el anuncio cuando esté listo
+  player.on('adplay', function() {
+    player.play();
+  });
+</script>
+
 </body>
 </html>
