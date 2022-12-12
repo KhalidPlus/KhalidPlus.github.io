@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Reproductor Albaplayer con anuncios VAST y M3U8</title>
+</head>
 <body>
-<video src="https://mundial-qatar.com/index.m3u8" data-vast-url="https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3"></video>
+  <h1>Reproductor Albaplayer con anuncios VAST y M3U8</h1>
+  <div id="player"></div>
+
+  <script src="https://cdn.albaplayer.com/albaplayer.min.js"></script>
+  <script>
+    var player = new Albaplayer.Player({
+      container: '#player',
+      source: {
+        type: 'm3u8',
+        src: 'https://mundial-qatar.com/index.m3u8'
+      },
+      vast: {
+        url: 'https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3'
+      }
+    });
+  </script>
 </body>
 </html>
