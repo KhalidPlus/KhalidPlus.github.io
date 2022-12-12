@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi video</title>
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+</head>
+<body>
+  <video id="mi-video" class="video-js vjs-default-skin" controls>
+    <source src="https://mundial-qatar.com/index.m3u8" type="application/x-mpegURL" />
+    <track kind="captions" src="mi-archivo-de-subtítulos.vtt" srclang="es" label="Español" />
+    <p>Tu navegador no soporta la reproducción de video en HTML5. Por favor, actualiza tu navegador.</p>
+  </video>
+  <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+  <script>
+    var video = document.getElementById('mi-video');
+    var player = videojs(video);
+    var options = {
+      id: 'mi-video',
+      adTagUrl: 'https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3'
+    };
+    player.ima(options);
+  </script>
+</body>
+</html>
