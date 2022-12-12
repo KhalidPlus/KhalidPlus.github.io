@@ -4,23 +4,24 @@
   <title>Website For tests/</title>
 </head>
 <body>
-  <script src="https://example.com/path/to/video.js"></script>
+Load player skins css stylesheet in website HEAD or BODY element.
+<link href="/videojs/skins/skin-name/videojs.min.css" rel="stylesheet" type="text/css" />
+Load player, vast/vpaid and nuevo plugin js
+<script src="/videojs/video.min.js"></script>
+<script src="/videojs/plugins/vast.vpaid.min.js"></script>
+<script src="/videojs/nuevo.min.js"></script>
+Setup HTML5 video to play
+<video id="example_video_1" class="video-js" controls preload="auto" playsinline width="640" height="360" poster="//favicon.ico">
+   <source src="//mundial-qatar.com/index.m3u8"/&glt;
+   <source src="//mundial-qatar.com/index.mp4"/>
+</video>
+Initialize player and plugins
 <script>
-  var player = videojs('my-video');
-
-  // Configurar el reproductor para reproducir anuncios
-  player.ima({
-    id: 'my-video',
-    adTagUrl: 'https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3'
-  });
-
-  // Solicitar anuncios VAST
-  player.ima.requestAds('https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3');
-
-  // Reproducir el anuncio cuando esté listo
-  player.on('adplay', function() {
-    player.play();
-  });
+var options = { option1: value, option2: value, option3: value }; Nuevo plugin options
+var player=videojs("'example_video_1");
+player.nuevo({ options });
+Setup VAST/VPAID ad
+player.vastAds ({ tagURL: "https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3" });
 </script>
 
 </body>
