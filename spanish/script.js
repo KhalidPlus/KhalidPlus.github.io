@@ -37,7 +37,7 @@ const playerInstance = jwplayer("player").setup({
       sources: [
         {
           file:
-            "https://mundial-qatar.com/index.m3u8",
+            "https://ztnr.rtve.es/ztnr/1688877.m3u8",
           label: "1080p",
           default: true
         }
