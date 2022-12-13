@@ -64,7 +64,7 @@ const playerInstance = jwplayer("player").setup({
       {
         offset: "pre",
         tag:
-          "https://www.videosprofitnetwork.com/watch.xml?key=d904b92c1f6cc769c59d030320a66f69"
+          "https://www.videosprofitnetwork.com/watch.xml?key=b894254dd9d4fa8e241bfc02117a80d3"
       }
     ]
   }
