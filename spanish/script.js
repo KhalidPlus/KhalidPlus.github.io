@@ -18,7 +18,7 @@ const playerInstance = jwplayer("player").setup({
    file:
       "https://upload.wikimedia.org/wikipedia/commons/8/89/HD_transparent_picture.png",
   
-    link: "https://ko-fi.com/mekmekmek"
+    link: "https://ko-fi.com/mekmekmek/"
   },
 
   captions: {
