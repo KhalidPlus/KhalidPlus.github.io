@@ -37,7 +37,7 @@ const playerInstance = jwplayer("player").setup({
       sources: [
         {
           file:
-            "https://prod-fastly-us-west-2.video.pscp.tv/Transcoding/v1/hls/yNrgiTJ-I-onifE_LVtJkktjV_9wAKbqDTzVP0K3XXiDAJrjS0oRWe9nRMb3kWQsKugKS58A752VYxmZ26iCQA/transcode/us-west-2/periscope-replay-direct-prod-us-west-2-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ183MjBwMzBfMTAiLCJIZWlnaHQiOjcyMCwiS2JwcyI6Mjc1MCwiV2lkdGgiOjEyODB9.ldktM4fCFRfkP4ZEBfZPKtlAUNAcTPkoz994YJAzWpE/tw_dynamic_highlatency.m3u8",
+            "https://prod-fastly-eu-west-3.video.pscp.tv/Transcoding/v1/hls/D75PE6KDBeuVW6yoDme4TLQLPokmc8MqCMYjRDaUVFBGJ9lDE50MQpQ7vggjlzincugItMIxyqPZPXhjHBHzNQ/transcode/eu-west-3/periscope-replay-direct-prod-eu-west-3-public/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlcnNpb24iOiIyIn0.eyJFbmNvZGVyU2V0dGluZyI6ImVuY29kZXJfc2V0dGluZ18zMjBwMzBfMTAiLCJIZWlnaHQiOjMyMCwiS2JwcyI6NjAwLCJUcmFuc2NvZGVBdWRpbyI6dHJ1ZSwiV2lkdGgiOjU2OH0.es_XpNv3J12hFXU4WrCwmH28GmToYAPDPdT_EjerHCU/tw_dynamic_highlatency.m3u8",
           label: "1080p",
           default: true
         }
