@@ -37,7 +37,7 @@ const playerInstance = jwplayer("player").setup({
       sources: [
         {
           file:
-            "https://live1.techstribes.com/techstribes/live/15.m3u8",
+            "https://playing.tunnelcdnsw.net/live/fs1us_720p/index.m3u8",
           label: "1080p",
           default: true
         }
